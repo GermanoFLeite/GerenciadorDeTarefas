@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="node_modules/mdb-ui-kit/css/mdb.dark.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container p-4 pt-4">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Lista de Tarefas</h2>
+            </div>
+        </div>
+        <div class="row justify-content-evenly ">
+            <div class="col">
+                <input data-entrada class="form-control" type="text">
+            </div>
+            <div class="col-3">
+                <button data-adicionar type="button" class="btn btn-secondary" data-mdb-ripple-color="light">adicionar</button>
+            </div>
+        </div>
+    </div> 
+    <div class="container  p-3 " data-lista>
+        <div class="row p-2 m-2 border-bottom" data-tarefa>
+            <div class="col-6 -3 text-end">
+                <h3>Comprar algo</h3>
+            </div>
+            <div class="col-3 text-center">
+                <button class="btn btn-success">Concluir</button>
+            </div>
+            <div class="col-3 text-center">
+                <button  class="btn btn-danger">Deletar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
